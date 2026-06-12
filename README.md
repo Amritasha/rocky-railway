@@ -9,7 +9,7 @@ Rocky Linux Terminal is a browser-accessible Rocky Linux 9 shell deployed on Rai
 
 ## About Hosting Rocky Linux Terminal
 
-Hosting Rocky Linux Terminal on Railway means spinning up a Rocky Linux 9 container with a browser-based terminal exposed via ttyd. Rocky Linux 9 is binary-compatible with RHEL 9, making it ideal for enterprise Linux work without a Red Hat subscription. EPEL is enabled at build time for access to the full RPM ecosystem. The image ships with a curated set of commonly used C libraries — openssl-devel, zlib-devel, libffi-devel, sqlite-devel, readline-devel, ncurses-devel, libxml2-devel, libxslt-devel, postgresql-devel, mysql-devel, libyaml-devel, libpng-devel, libjpeg-devel, and kernel-headers — so most language runtimes and native extensions compile without extra setup. A persistent volume is mounted at `/root` so your files survive restarts.
+Hosting Rocky Linux Terminal on Railway means spinning up a Rocky Linux 9 container with a browser-based terminal exposed via ttyd. Rocky Linux 9 is binary-compatible with RHEL 9, making it ideal for enterprise Linux work without a Red Hat subscription. EPEL is enabled at build time for access to the full RPM ecosystem. The image ships with a curated set of commonly used C libraries — openssl-devel, zlib-devel, libffi-devel, sqlite-devel, readline-devel, ncurses-devel, libxml2-devel, libxslt-devel, postgresql-devel, mariadb-connector-c-devel, libyaml-devel, libpng-devel, libjpeg-devel, and kernel-headers — so most language runtimes and native extensions compile without extra setup. A persistent volume is mounted at `/root` so your files survive restarts.
 
 ## Common Use Cases
 
@@ -49,7 +49,7 @@ Hosting Rocky Linux Terminal on Railway means spinning up a Rocky Linux 9 contai
 | Network | ifconfig, ip, ping, dig, openssh-clients, telnet, ncat |
 | Data | jq |
 | General | sudo, python3, pip, git, curl, wget, neofetch |
-| Libraries | openssl-devel, zlib-devel, libffi-devel, sqlite-devel, readline-devel, ncurses-devel, libxml2-devel, libxslt-devel, postgresql-devel, mysql-devel, libyaml-devel, libpng-devel, libjpeg-devel, kernel-headers |
+| Libraries | openssl-devel, zlib-devel, libffi-devel, sqlite-devel, readline-devel, ncurses-devel, libxml2-devel, libxslt-devel, postgresql-devel, mariadb-connector-c-devel, libyaml-devel, libpng-devel, libjpeg-devel, kernel-headers |
 
 ## Installing More Packages
 
