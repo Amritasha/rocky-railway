@@ -4,7 +4,7 @@ RUN dnf update -y && \
     dnf install -y epel-release && \
     dnf install -y 'dnf-command(config-manager)' && \
     dnf config-manager --set-enabled crb && \
-    dnf install -y wget curl git python3 python3-pip \
+    dnf install -y --allowerasing wget curl git python3 python3-pip \
         net-tools iproute iputils bind-utils \
         vim nano htop tree unzip zip \
         gcc gcc-c++ make \
