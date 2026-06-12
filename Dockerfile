@@ -9,7 +9,13 @@ RUN dnf update -y && \
         openssh-clients telnet nmap-ncat \
         jq less man-db sudo lsof strace \
         procps-ng file ca-certificates \
-        neofetch && \
+        neofetch \
+        openssl-devel zlib-devel libffi-devel \
+        sqlite-devel readline-devel ncurses-devel \
+        libxml2-devel libxslt-devel \
+        postgresql-devel mysql-devel \
+        libyaml-devel libpng-devel libjpeg-devel \
+        kernel-headers && \
     dnf clean all
 
 RUN wget -qO /usr/local/bin/ttyd https://github.com/tsl0922/ttyd/releases/download/1.7.3/ttyd.x86_64 && \
