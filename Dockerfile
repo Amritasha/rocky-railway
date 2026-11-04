@@ -30,4 +30,4 @@ EXPOSE 7681
 
 CMD ["/bin/bash", "-c", "\
     echo \"export PS1='\\[\\033[01;32m\\]$USERNAME@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ '\" >> /root/.bashrc && \
-    /usr/local/bin/ttyd -p 7681 -c $USERNAME:$PASSWORD /bin/bash"]
+    exec /usr/local/bin/ttyd -p 7681 -c \"$USERNAME:$PASSWORD\" /bin/bash"]
